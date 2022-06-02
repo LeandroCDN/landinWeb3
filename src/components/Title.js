@@ -4,7 +4,7 @@ import './Title.css';
 function Title (props){
 
   return(
-    <h1 >Un titulo increible</h1>
+    <h1 >Medabots Vesting</h1>
   )
 
 }
