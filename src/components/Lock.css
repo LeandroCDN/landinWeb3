@@ -4,7 +4,7 @@
     color: #D4D4D4!important;
     letter-spacing: 1.0px;
     text-align: center;
-    line-height: 150px;
+    line-height: 160px;
     border-radius: 5px;
     border: 5px solid rgb(164, 0, 164);
     border-style:groove;
@@ -17,7 +17,9 @@
     color: #D4D4D4!important;
     letter-spacing: 1.0px;
     text-align: center;
-    
+    padding: 10px; 
+    position: relative;
+    top:10px;
   }
   
   .inputLock {
@@ -29,6 +31,12 @@
     text-align: center;
     line-height: 30px;
     justify-content: center;
+    border-radius: 5px;
+    padding: 10px; 
+    box-sizing: border-box;
+    border: 2px solid rgb(164, 0, 164);
+    position: relative;
+    top:10px;
   }
   
   
@@ -44,5 +52,10 @@
     text-align: center;
     line-height: 30px;
     justify-content: center;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box; 
+    border: 2px solid rgb(164, 0, 164);
+    position: relative;
+    top:10px;
   }
-  
