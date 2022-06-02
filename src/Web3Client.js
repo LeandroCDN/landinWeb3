@@ -7,7 +7,7 @@ let isInitialized = false;
 export let selectedAccount;
 
 
-export const init = async () => {
+export const init = async ({setAccount}) => {
 	let provider = window.ethereum;
 
 	if (typeof provider !== 'undefined') {
@@ -28,10 +28,11 @@ export const init = async () => {
 			console.log(`Selected account changed to ${selectedAccount}`);
 		});
 	}
-
 	const web3 = new Web3(provider);
 	
+	setAccount(selectedAccount);
 	isInitialized = true;
+	return web3;
 };
 
 const token = async () => {
@@ -68,4 +69,21 @@ const vestingContract = async () => {
 export const lock = async (amount) => {
 	const vesting = await vestingContract();
 	return vesting.methods.lock(amount).send({from: selectedAccount});
+}
+
+export const claim = async () => {
+	const vesting = await vestingContract();
+	return vesting.methods.claim().send({from: selectedAccount});
+}
+
+export const timeNextClaim = async ({setTime}) => {
+	const vesting = await vestingContract();
+	//const web3 = await init();
+	return vesting.methods
+		.timeToNextClaim( selectedAccount)
+		.call()
+		.then((balance) => {
+			console.log(Web3.utils.fromWei(balance));
+			setTime(Web3.utils.fromWei(balance));
+		});
 }

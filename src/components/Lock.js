@@ -12,7 +12,7 @@ function Lock (){
 
   return(
     <div className="divLock">
-        <h3>Blockear tokens a vesting contract 75 tokens = 75000000000000000000  - numero recomendado</h3>
+        <h3>Elige la cantidad de tokens a blockear</h3>
         <span className="spanLock">Block</span>
         <input  
           type="text" 

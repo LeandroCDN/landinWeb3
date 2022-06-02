@@ -4,6 +4,8 @@ import { ConectButton } from './components/ConectButton';
 import { Title } from './components/Title';
 import { Approve } from './components/Approve';
 import { Lock } from './components/Lock';
+import { Claim } from './components/Claim';
+
 
 
 function App() {	
@@ -14,6 +16,8 @@ function App() {
       <Title/>
       <Approve/>
       <Lock/>
+      <Claim/>
+      
     </React.Fragment>
 	);
 }

@@ -4,17 +4,15 @@ import './ConectButton.css';
 import {init, selectedAccount} from '../Web3Client';
 
 function ConectButton() { 
-  // const onClickButton = () => {
-  //   init();
-  // };
+  const [account, setAccount] = React.useState('Conectar');
 
   return (
     <button 
       className="ConectButton"
-      onClick={() => init()}
+      onClick={() => init({setAccount})}
     >
-      Conectar Wallet
-      {selectedAccount}
+      
+      {account}
     </button>
     
   );

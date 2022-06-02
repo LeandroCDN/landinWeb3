@@ -1,35 +1,26 @@
 import React from "react";
 import { approveToken } from "../Web3Client";
+
 import './Approve.css';
 
 
 function Approve () {
   
-  const amount = () => {
-    let _amount = document.getElementById('aprovedTokens').value * 1000000000000000000;    
-    console.log(_amount);
-    return _amount.toString();
-   };
+  const amount = () => {  
+    let _amount = "80000000000000000000000000";       
+    return _amount;
+  };
   
   
   return(
     <div className="divApprove">
-        <h2> Aprobar tokens suficientes a vesting contract para que este pueda moverlos ej: 10000 tokens = 10000000000000000000000</h2>
-
-        <span className="spanApprove">Approve Medamon</span>
-        
-        <input  
-          type="text" 
-          placeholder="Cantidad de token" 
-          id="aprovedTokens" 
-          className="inputApprove"
-        />
+        <h2> Aprobar tokens </h2>
         
         <button  
           className="buttonApprove"
           onClick={() => approveToken( amount())}
         >
-          Approve
+          Approve Medamon
         </button>
     </div>
   )
