@@ -1,6 +1,7 @@
 import React from "react";
 import { lock } from "../Web3Client";
 import './Lock.css';
+import './Approve.css';
 var Web3 = require('web3');
 
 function Lock (){
@@ -14,14 +15,6 @@ function Lock (){
   return(
     <div className="divLock">
         <h3>Elige la cantidad de tokens a blockear</h3>
-        <span className="spanLock">Block</span>
-        <input  
-          type="text" 
-          placeholder="Cantidad de token" 
-          className="inputLock"
-          //value = {valueLock}
-          onChange = {amount}
-        />
         
         <button  
           className="buttonLock"
@@ -38,3 +31,4 @@ function Lock (){
 }
 
 export { Lock };
+
