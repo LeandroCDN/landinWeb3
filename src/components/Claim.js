@@ -10,19 +10,20 @@ function Claim () {
   return(
     <React.Fragment>
       <Check className="classCheck"/>
-      <div className="divApprove">
+      <div className="divClaim">
           <h2> Claimea tus tokens </h2>
           
           <button  
-            className="buttonApprove"
+            className="buttonClaim"
             onClick={() => claim()}
           >
             Claim Medamon
           </button>
-          <p>Hola</p>
       </div>
 
-
+      <footer className= "footer">
+      <h2> </h2>
+      </footer>
 
     </React.Fragment>
   )
