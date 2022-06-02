@@ -1,5 +1,6 @@
 import React from "react";
-import { timeNextClaim } from "../Web3Client";	
+import { timeNextClaim } from "../Web3Client";
+import './Check.css';	
 	
 
 
@@ -20,7 +21,7 @@ function Check () {
       <h2> Checkea tus tokens </h2>
       <div>
         <button  
-          className="buttonApprove"
+          className="buttonCheck"
           onClick={() => timeNextClaim({setTime})}
         >
           Check Next claim
