@@ -1,5 +1,6 @@
 import React from "react";
 import { lock } from "../Web3Client";
+import './Lock.css';
 
 function Lock (){
   
@@ -11,8 +12,8 @@ function Lock (){
 
   return(
     <div className="divLock">
+        <h3>Blockear tokens a vesting contract 75 tokens = 75000000000000000000  - numero recomendado</h3>
         <span className="spanLock">Block</span>
-        
         <input  
           type="text" 
           placeholder="Cantidad de token" 
