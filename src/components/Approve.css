@@ -4,20 +4,9 @@
   color: #D4D4D4!important;
   letter-spacing: 1.0px;
   text-align: center;
-  line-height: 80px;
+  line-height: 40px;
 }
 
-
-.spanApprove{
-  font-family: 'B Biger Over',Helvetica,Arial,Lucida,sans-serif;
-  font-size: 25px;
-  color: #D4D4D4!important;
-  letter-spacing: 1.0px;
-  text-align: center;
-  padding: 10px; 
-  position: relative;
-  top:10px;
-}
 
 
 .buttonApprove{
@@ -37,6 +26,8 @@
   box-sizing: border-box; 
   border: 2px solid rgb(164, 0, 164);
   position: relative;
-  top:10px;
+  top: 5px;
 }
+
+
 
