@@ -1,4 +1,12 @@
 h1 {
+  font-family: 'B Biger Over',Helvetica,Arial,Lucida,sans-serif;
+  font-size: 50px;
+  color: #FFFFFF;
+  letter-spacing: 1.5px;
   text-align: center;
-  color: rgb(5, 225, 57); 
+  border: 5px solid rgb(164, 0, 164);
+  border-radius: 30px;
+  border-style:groove;
+
 }
+
