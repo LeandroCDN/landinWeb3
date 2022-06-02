@@ -4,8 +4,7 @@
   color: #D4D4D4!important;
   letter-spacing: 1.0px;
   text-align: center;
-  line-height: 150px;
-
+  line-height: 80px;
 }
 
 
@@ -16,22 +15,8 @@
   letter-spacing: 1.0px;
   text-align: center;
   padding: 10px; 
-  
-}
-
-.inputApprove {
-  font-family: 'B Biger Over',Helvetica,Arial,Lucida,sans-serif;
-  font-size: 15px;
-  color: #121212!important;
-  background-color: #D4D4D4;
-  letter-spacing: 1.0px;
-  text-align: center;
-  line-height: 30px;
-  justify-content: center;
-  border-radius: 5px;
-  padding: 10px; 
-  box-sizing: border-box;
-  border: 2px solid rgb(164, 0, 164);
+  position: relative;
+  top:10px;
 }
 
 
@@ -52,6 +37,6 @@
   box-sizing: border-box; 
   border: 2px solid rgb(164, 0, 164);
   position: relative;
-
+  top:10px;
 }
 
