@@ -35,6 +35,7 @@ export const init = async ({setAccount}) => {
 	return web3;
 };
 
+
 const token = async () => {
 	const provider = window.ethereum;
 	const web3 = new Web3(provider);
