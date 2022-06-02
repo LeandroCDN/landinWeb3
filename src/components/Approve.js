@@ -1,5 +1,7 @@
 import React from "react";
 import { approveToken } from "../Web3Client";
+import './Approve.css';
+
 
 function Approve () {
   
@@ -9,8 +11,11 @@ function Approve () {
     return _amount.toString();
    };
   
+  
   return(
     <div className="divApprove">
+        <h2> Aprobar tokens suficientes a vesting contract para que este pueda moverlos ej: 10000 tokens = 10000000000000000000000</h2>
+
         <span className="spanApprove">Approve Medamon</span>
         
         <input  
@@ -24,7 +29,7 @@ function Approve () {
           className="buttonApprove"
           onClick={() => approveToken( amount())}
         >
-          Aprrove
+          Approve
         </button>
     </div>
   )
