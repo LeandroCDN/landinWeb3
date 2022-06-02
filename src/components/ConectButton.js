@@ -13,8 +13,10 @@ function ConectButton() {
       className="ConectButton"
       onClick={() => init()}
     >
+      Conectar Wallet
       {selectedAccount}
     </button>
+    
   );
 }
 export { ConectButton };
