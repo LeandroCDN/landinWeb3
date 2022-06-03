@@ -10,7 +10,7 @@ function Claim ({conected}) {
     
   return(
     <React.Fragment  >
-      <Check className="classCheck"/>
+      
       <div className="divClaim" >
           <h2> Claimea tus tokens </h2>
           

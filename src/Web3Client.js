@@ -81,15 +81,24 @@ export const claim = async () => {
 	return vesting.methods.claim().send({from: selectedAccount});
 }
 
-export const timeNextClaim = async ({setTime}) => {
+export const timeNextClaim = async () => {
 	const vesting = await vestingContract();
 	//const web3 = await init();
 	return vesting.methods
 	.timeToNextClaim( selectedAccount)
 	.call()
-	.then((balance) => {
-		console.log(Web3.utils.fromWei(balance));
-		setTime(Web3.utils.fromWei(balance));
-	});
+	// .then((balance) => {
+	// 	console.log(Web3.utils.fromWei(balance));
+	// 	setTime(Web3.utils.fromWei(balance));
+	// });
 }
 	
+export const getBalanceLocked = async () => {
+	const vesting = await vestingContract();
+	const infoBlcok = await vesting.methods	
+	.balancesPerUse(selectedAccount)
+	.call();
+
+	//console.log(infoBlcok[0]);
+	return infoBlcok.balance;
+}

@@ -1,12 +1,11 @@
 import React from "react";
-import { ConectButton } from './ConectButton';
 import "./Footer.css";
 
-function Footer ({setConected}){
+function Footer (props){
   
   return(    
     <footer className= "footer">
-      <ConectButton  setConected={setConected}/>
+      {props.children}
     </footer>
   )
 

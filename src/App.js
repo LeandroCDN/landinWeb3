@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import Web3 from 'web3';
+
 import { Title } from './components/Title';
 import { Approve } from './components/Approve';
 import { Lock } from './components/Lock';
 import { Claim } from './components/Claim';
 import { Footer } from './components/Footer';
-
+import {ConectButton} from './components/ConectButton';
+import {Check} from './components/Check';
 
 
 
@@ -19,11 +21,17 @@ function App() {
 		<React.Fragment>
       
       <Title/>
-      {conected && <Approve/>  }
-      {haveBalance && <Lock  /> }      
-      {checkResult && <Claim />}     
-      
-      <Footer setConected={setConected}/>
+      {conected && !haveBalance && <Approve/>  }
+      {!haveBalance && <Lock  /> }      
+      {checkResult && <Check/> }
+      {!checkResult && haveBalance && <Claim />}     
+      <Footer >        
+        <ConectButton  
+          setConected={setConected}
+          setHaveBalance={setHaveBalance}
+          setCheckResult={setCheckResult}
+        />
+      </Footer>
     </React.Fragment >
 	);
 }
