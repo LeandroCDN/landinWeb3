@@ -13,7 +13,7 @@ function Lock (){
   };
   
   return(
-    <div className="divLock">
+    <div className="divLock" >
         <h3>Elige la cantidad de tokens a blockear</h3>
         
         <button  

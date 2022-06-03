@@ -1,0 +1,25 @@
+.footer{ 
+  position:unset; 
+  bottom:0; 
+  width:99%; 
+  height:90px; 
+  background:#121212;
+  border-radius: 5px;
+  border-style:groove;
+  border-color: darkmagenta; 
+  text-align: center;
+  justify-content: center;
+  line-height: 150px;
+  font-family: 'B Biger Over',Helvetica,Arial,Lucida,sans-serif;
+  font-size: 10px;
+  color: #FFFFFF;
+  letter-spacing: 1.5px;
+  text-align: center;
+  
+  
+  
+  position: fixed;
+  bottom: 5px;
+  left: 0.3%;
+  
+}

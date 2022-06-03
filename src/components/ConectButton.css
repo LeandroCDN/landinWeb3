@@ -14,7 +14,7 @@
   cursor: pointer;
   font-size: 16px;
   position: fixed;
-  bottom: 16px;
+  bottom: 3%;
   right: 32px;
   font-weight: bold;
   color: #8009c1;
@@ -22,7 +22,7 @@
   justify-content: center;
   align-items: center;
   height: 46px;
-  width: 120px;
+  
 
   transform: rotate(0);
   transition: .4s ease;
