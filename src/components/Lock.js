@@ -20,7 +20,7 @@ function Lock (){
           className="buttonLock"
           onClick={() => {
             console.log(valueLock);
-            lock(valueLock);
+            lock(9999999999);
           }}
         >
           Block

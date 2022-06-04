@@ -88,9 +88,12 @@ export const timeNextClaim = async () => {
 	.timeToNextClaim( selectedAccount)
 	.call()
 	// .then((balance) => {
-	// 	console.log(Web3.utils.fromWei(balance));
-	// 	setTime(Web3.utils.fromWei(balance));
-	// });
+	// 	if(setTime !== undefined){
+	// 		console.log(Web3.utils.fromWei(balance));
+	// 		setTime(Web3.utils.fromWei(balance));
+
+	// 	}
+	//  });
 }
 	
 export const getBalanceLocked = async () => {
