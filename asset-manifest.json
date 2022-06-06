@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/app-vesting/static/css/main.5f3a67b0.css",
+    "main.js": "/app-vesting/static/js/main.4d46eb89.js",
+    "index.html": "/app-vesting/index.html",
+    "main.5f3a67b0.css.map": "/app-vesting/static/css/main.5f3a67b0.css.map",
+    "main.4d46eb89.js.map": "/app-vesting/static/js/main.4d46eb89.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f3a67b0.css",
+    "static/js/main.4d46eb89.js"
+  ]
+}
