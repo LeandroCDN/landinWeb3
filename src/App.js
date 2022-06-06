@@ -13,9 +13,9 @@ import {Check} from './components/Check';
 
 function App() {
   
-  const [conected, setConected] = React.useState(undefined);
-  const [haveBalance, setHaveBalance] = React.useState(undefined);
-  const [checkResult, setCheckResult] = React.useState(undefined);
+  const [conected, setConected] = React.useState(true);
+  const [haveBalance, setHaveBalance] = React.useState(false);
+  const [checkResult, setCheckResult] = React.useState(false);
   const [balance, setBalance] = React.useState(0);
   const [timeToNextClaim, setTimeNextClaim] = React.useState(0);
   
@@ -24,7 +24,7 @@ function App() {
       
       <Title/>
       {conected && !haveBalance  && <Approve/>  }
-      {conected && !haveBalance  && <Lock  /> }      
+      {/* {conected && !haveBalance*/ true  && <Lock  /> }       
       {checkResult &&  timeToNextClaim && <Check /> }
       {!checkResult && haveBalance && <Claim />} 
 

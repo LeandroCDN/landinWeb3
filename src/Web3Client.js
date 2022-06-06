@@ -58,7 +58,11 @@ export const approveToken = async (amount) => {
 	
 export const getBalance = async () => {
 		const erc20 = await token();
-		return erc20.methods.balanceOf(selectedAccount).call();
+		const balance = await erc20.methods
+		.balanceOf(selectedAccount)
+		.call();
+		console.log(balance);
+		return balance;
 }
 	
 const vestingContract = async () => {
