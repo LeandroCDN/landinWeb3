@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/app-vesting/static/css/main.4f023490.css",
-    "main.js": "/app-vesting/static/js/main.d7447dad.js",
-    "index.html": "/app-vesting/index.html",
-    "main.4f023490.css.map": "/app-vesting/static/css/main.4f023490.css.map",
-    "main.d7447dad.js.map": "/app-vesting/static/js/main.d7447dad.js.map"
+    "main.css": "/landinWeb3/static/css/main.4f023490.css",
+    "main.js": "/landinWeb3/static/js/main.5556728e.js",
+    "index.html": "/landinWeb3/index.html",
+    "main.4f023490.css.map": "/landinWeb3/static/css/main.4f023490.css.map",
+    "main.5556728e.js.map": "/landinWeb3/static/js/main.5556728e.js.map"
   },
   "entrypoints": [
     "static/css/main.4f023490.css",
-    "static/js/main.d7447dad.js"
+    "static/js/main.5556728e.js"
   ]
 }
